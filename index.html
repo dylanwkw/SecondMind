@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  <title>Dylan's Second Mind</title>
+</head>
+
+<body>
+    <div class="container"></div>
+    <h1>Welcome to your Second Mind</h1>
+
+  <form id="noteForm">
+    <label for="link">Link:</label>
+    <input type="text" id="link" name="link" required>
+    <br >
+    <br >
+
+    <label for="description">Description: </label>
+    <textarea id="description" name="description" required> </textarea>
+    <br >
+    <br>
+    <label for="tags">Tags (Up to 5 tags):</label>
+    <input type="text" id="tags" name="tags" placeholder="Enter tags, separated by commas" maxlength="100">
+
+
+    <button type="submit"> Store it in your Second Mind </button>
+  </form>
+
+  <div id="notesContainer">
+    <ul id="notesList">
+      <!-- Display saved notes here -->
+    </ul>
+  </div>
+  
+  <script src="scripts.js"> </script>
+</body>
+</html>
